@@ -1,0 +1,252 @@
+body {
+    background-color: #303f88;
+}
+
+#headerli {
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid blue;
+    width: 97%;
+    color: white;
+
+}
+
+.header {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#top {
+    background-color: #14388a;
+}
+
+#tmusic {
+    height: 535px;
+    width: 972px;
+    /*            border: 1px solid blue;*/
+    background-color: #010752;
+    color: white;
+
+}
+
+#treco_albums {
+    position: absolute;
+    top: 610px;
+    left: 10px;
+    height: 360px;
+    width: 480px;
+    /*/*            border: 1px solid blue;*/
+    background-color: #C1C8E4;
+    color: white;
+}
+
+#tartist {
+    position: absolute;
+    top: 980px;
+    left: 10px;
+    height: 240px;
+    width: 970px;
+    /*/*            border: 1px solid blue;*/
+    background-color: #C1C8E4;
+    /* overflow:scroll; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#tgenere {
+    position: absolute;
+    top: 610px;
+    left: 500px;
+    height: 360px;
+    width: 480px;
+    /*/*            border: 1px solid blue;*/
+    background-color: #C1C8E4;
+    color: white;
+}
+
+#filler {
+    position: absolute;
+    top: 1040px;
+    left: 0px;
+    height: 360px;
+    width: 99%;
+    z-index: -1;
+
+}
+
+#aside_playlist {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    position: absolute;
+    height: 600px;
+    width: 515px;
+    top: 66px;
+    right: 10px;
+    /*/*            border: 1px solid blue;*/
+    background-color: #1B9CE5;
+
+
+}
+
+#aside_song {
+    position: absolute;
+    top: 675px;
+    right: 10px;
+    /*/*            border: 1px solid blue;*/
+    height: 545px;
+    width: 515px;
+    background-color: #1B9CE5;
+    overflow-x: scroll;
+}
+
+#asidesong_head {
+    align-items: center;
+    background-color: #14388a;
+}
+
+.asidehead {
+    display: inline-block;
+    margin: 5px;
+    justify-content: center;
+    color: white;
+}
+
+.asongs {
+    border: 1px solid white;
+    height: 150px;
+    width: 100%;
+}
+
+.imgc_aside {
+    height: 90px;
+    width: 90px;
+    border: 1px solid white;
+    margin-top: 5%;
+    margin-left: 10px;
+}
+
+.imgc_images {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#mplayer {
+    width: 100%;
+    height: 160px;
+    position: fixed;
+    bottom: 0px;
+    left: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background-color: #14388a;
+    color: white;
+
+}
+
+.mps {
+    display: inline-block;
+    margin: 10px;
+}
+
+#mps_songpic {
+    height: 130px;
+    width: 130px;
+    position: fixed;
+    left: 100px;
+    bottom: -1px;
+    border-style: solid;
+    /* border-color: rgb(231, 218, 189); */
+
+}
+
+#mps_previous {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    /* border-color: red; */
+
+}
+
+#mps_pause {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    /* border-color: red; */
+}
+
+#mps_next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    /* border-color: red; */
+}
+.mpbtn{
+    width: 50px;
+    height: 50px;
+}
+.btnimg{
+    width:100%;
+    height:100%;
+}
+
+#cr_mimg {
+    height: 300px;
+    width: 400px;
+    border: 1px solid blue;
+    color: white;
+}
+
+#cr_minfo {
+    height: 150px;
+    width: 250px;
+    border: 1px solid blue;
+    margin-top: 10px;
+    color: white;
+}
+
+#timeline {
+    width: 400px;
+    height: 20px;
+    background: #4200f7;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+}
+
+#playhead {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 255, 196, 0.82);
+}
+
+#pl_select {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 80%;
+    height: 30px;
+}
+
+.lo_artist {
+    display: inline-block;
+    height: 125px;
+    width: 125px;
+    border: 1px solid blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}  -->

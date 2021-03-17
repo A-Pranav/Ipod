@@ -1,0 +1,464 @@
+/* it is made by pranav Arora */
+/* all comments have been made where ever necessary */
+
+body{
+background:#4d4d4d;
+}
+
+#container{
+width:100%;
+height:100%;
+padding-top:10px;
+}
+
+/* ipod body */
+
+#ipod{
+width:360px;
+height:582px;
+background: #0fe1ee;
+margin:0 auto;
+margin-top:50px;
+border-radius: 35px;
+background: #0fe1ee;
+border-right: #C3CAD2 4px solid;
+border-left: #909599 4px solid;
+border-top: #D2D5DA 4px solid;
+border-bottom: #737278 4px solid;
+}
+
+/* ipod screen */
+
+#screen{
+position:relative;
+width:240px;
+height:188px;
+top:28px;
+left:56px;
+font-family: cm, sans-serif;
+font-weight: bold;
+font-size:16px;
+color: #303531;
+overflow:hidden;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+border:3px #595854 solid;
+-webkit-box-shadow:  1px 1px 1px 1px #C0BFBD;
+box-shadow:  1px 1px 1px 1px #C0BFBD;
+background-color:rgb(223, 238, 239);
+}
+
+/* click wheel outer*/
+
+#clickwheel{
+position:relative;
+width:300px;
+height:300px;
+border:2px solid #4d4d4d;
+top:55px;
+left:25px;
+border-radius: 50%;
+}
+
+/* click wheel inner */
+
+#innerwheel{
+position:relative;
+width: 219px;
+height: 219px;
+border: 2px solid #4d4d4d;
+background-color: rgb(201, 192, 154);
+top: 37px;
+left: 39px;
+border-radius: 50%;
+box-shadow:  2px 1px 10px 10px rgba(232, 232, 232, .4);
+}
+
+/* wheel button */
+
+#innerbutton{
+position:absolute;
+width: 80px;
+height: 80px;
+border: 2px solid #4d4d4d;
+top: 70px;
+left: 68px;
+border-radius: 50%;
+z-index:15;
+box-shadow:  2px 1px 10px 10px rgba(232, 232, 232, .4);
+background: #0fe1ee;
+}
+
+/* all the buttons */
+
+.button{
+position:absolute;
+width:150px;
+height:150px;
+}
+
+/* upper button */
+
+#topbutton{
+top:-33px;
+left:74px;
+border-top:0px;
+border-left:0px;
+}
+
+#topbutton span{
+-moz-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+/* buttom button */
+
+#bottombutton{
+top:182px;
+left:74px;
+border-bottom:0px;
+border-right:0px;
+}
+
+/* all titles */
+
+.title{
+width:100%;
+height:23px;
+text-align:center;
+margin-top:5px;
+border-bottom: 2px #242925 solid;
+}
+
+/* lists of the screen */
+
+#screen ul {
+	display:block;
+	padding:0;
+	cursor:pointer;
+	margin-top:3px;
+}
+
+#screen ul a{
+	display:block;
+	text-decoration: none;
+	color: #1a171b;
+}
+
+#screen a li {
+	list-style:none;
+	height: 24px;
+	padding-left:7px;
+	padding-top:2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* selected list */
+
+#screen a.select li  {
+	background:#098bf5;
+	color:#ffffff;
+}
+
+#screen a .arrow {
+	margin-left: 228px;
+	position: absolute;
+	margin-top: -23px;
+}
+
+#screen a.select  .arrow {
+	margin-left: 228px;
+	position: absolute;
+	margin-top: -23px;
+	color:#ffffff;
+}
+
+/* playing indicator */
+
+#playindicator{
+	display:none;
+	position: absolute;
+	width: 22px;
+	height: 20px;
+	top: -7.5px;
+	left: 0px;
+	width: 0; 
+	height: 0; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent; 
+	border-left: 8px #ffffff solid;
+	float: left;
+}
+
+#playimg{
+    width: 27px;
+	height: 27px;
+}
+
+#pauseindicator{
+	display:none;
+	position: absolute;
+	width: 22px;
+	height: 20px;
+	top: 1px;
+	left: 7px;
+	float:left;
+}
+
+#pauseimg{
+    width: 22px;
+	height: 20px;
+}
+
+/* battery level */
+
+.battery{
+	position: absolute;
+	width: 22px;
+	height: 9px;
+	top: 9px;
+	right: 8px;
+	outline: #303531 1px solid;
+	font-size: 35px;
+	letter-spacing: -10px;
+	overflow: hidden;
+	line-height: 1px;
+	text-indent: -5px;
+	border: solid 1px #C0BDB6; 
+}
+
+.batterytip{
+	position: absolute;
+	width: 2px;
+	height: 3px;
+	right: 4px;
+	top: 12px;
+	border: 1px #303531 solid;
+	border-left: 1px #C0BDB6 solid;
+}
+
+/* menu button */
+
+#menu{
+	position: absolute;
+	top: 7px;
+	left: 127px;
+	color: #098bf5;
+	font-family: cm, sans-serif;
+    font-size:16px;
+    font-weight: bold;
+}
+
+/* previous button image */
+
+#prev{
+	position: absolute;
+	top: 140px;
+	left: 2px;
+	color: #979EA4;
+	font-family: cm, sans-serif;
+	font-size:16px;
+}
+
+#previmg{
+    width:26px;
+    height: 26px;
+}
+
+#nextimg{
+    width:26px;
+    height: 26px;
+}
+
+.arrow-left {
+	width: 0px; 
+	height: 0px; 
+	border-top: 5px solid transparent;
+	border-bottom: 8px solid transparent; 
+	border-right: 8px #A1A5A8 solid;
+	float: right;
+}
+
+/* next button */
+
+#next{
+	position: absolute;
+	top: 140px;
+	left: 272px;
+	color: #979EA4;
+	font-family: cm, sans-serif;
+	font-size:16px;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent; 
+	border-left: 8px #A1A5A8 solid;
+	float: left;
+}
+
+.bar-right {
+	width: 0; 
+	height: 15px; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent; 
+	border-left: 4px #A1A5A8 solid;
+	float: right;
+}
+
+#play-pause{
+	position: absolute;
+    top: 272px;
+    left: 137px;
+	color: #979EA4;
+	font-family: cm, sans-serif;
+	font-size:16px;
+}
+
+#pauseimg{
+    width:26px;
+    height: 26px;
+}
+
+#leftbutton{
+top: 74px;
+left: -32px;
+border: 0px;
+}
+
+#rightbutton{
+top: 74px;
+left: 179px;
+border: 0px;
+}
+
+.gap{
+	margin-left:2px;
+}
+
+.tile{
+margin:0;
+float:left;
+width: 100%;
+}
+
+.tile li{
+list-style:none;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space:nowrap;
+}
+
+/*Now Playing*/
+
+.tracknumber{
+line-height:20px;
+font-size: 12px;
+padding-left:5px;
+}
+
+.songtitle, .songartist, .albumtitle{
+text-align:center;
+line-height:28px;
+}
+
+.timevolume{
+line-height:25px;
+padding-left:10px;
+padding-top:10px;
+}
+
+.trackbar{
+position:absolute;
+width:65%;
+height:10px;
+bottom:22px;
+left:70px;
+border: 2px #303531 solid;
+border-radius: 5px 5px 5px 5px;
+}
+
+.trackbartime{
+width:0%;
+height:100%;
+background: #649ef5;
+}
+
+#player{
+display:block;
+}
+
+.timeline{
+display:block;
+}
+
+.volumeincr{
+width:24px;
+height:24px;
+float:left;
+margin-left:3px;
+}
+
+.volumedecr{
+width:24px;
+height:24px;
+float:right;
+margin-right:10px;
+}
+
+.volumebar{
+position:absolute;
+width:70%;
+height:10px;
+bottom:19px;
+left:30px;
+border: 2px #303531 solid;
+}
+
+.volumelevel{
+width:0%;
+height:100%;
+background: #098bf5;
+
+}
+
+.volume{
+display:none;
+}
+
+.scrolltime{
+display:none;
+}
+
+.scrolltimebar{
+position:absolute;
+width:70%;
+height:10px;
+bottom:25px;
+left:30px;
+border: 2px #303531 solid;
+}
+
+.scrolltimelevel{
+width:0%;
+height:100%;
+background: #649ef5;
+float:left;
+}
+
+.scrolltimebar span {
+color: #303531;
+line-height: 7px;
+font-size: 20px;
+height: 5px;
+margin: 0px 0px 0 -11px;
+display: block;
+float: left;
+text-shadow: rgba(0, 0, 0, 1) 0 0 0;
+}
