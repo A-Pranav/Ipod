@@ -1,0 +1,761 @@
+<!-- it is made by pranav arora -->
+<!-- the comments have been made whwere ever they were necessary -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>iPod</title>
+</head>
+<meta name="viewport" content="width=500, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<script src="jquery-3.5.1.min.js"></script>
+<script src="wheel.js"></script>
+<script src="mainjs.js"></script>
+<link href="mainstyle.css" rel="stylesheet" />
+<body>
+    <!-- main container -->
+    <div id="container">
+        <!-- ipod body -->
+        <div id="ipod">
+            <!-- ipod screen -->
+            <div id="screen">
+                <!-- top display area -->
+                <div id="playindicator">
+                    <img id="playimg" src="images/play.png">
+                </div>
+                <div id="pauseindicator">
+                        <img id="pauseimg" src="images/pauseimg.png">
+                </div>
+                <div class="batterytip"></div>
+                <div class="battery">|||||</div>
+                <!-- home page list -->
+                <div id="homemenu" class="tile">
+                    <div class="title">
+                        <span>iPod</span>
+                    </div>
+                    <ul>
+                        <a href="#playlists">
+                            <li>Playlists</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#browse">
+                            <li>Browse</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#extras">
+                            <li>Extras</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#settings">
+                            <li>Settings</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#about">
+                            <li>About</li>
+                            <span class="arrow">></span>
+                        </a>
+                    </ul>
+                </div>
+                <!-- playlist section -->
+                <div id="playlists" class="tile">
+                    <div class="title">
+                        <span>Playlists</span>
+                    </div>
+                    <ul>
+                        <a href="#favorites">
+                            <li>Favorites</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#mondaymorning">
+                            <li>Monday Morning</li>
+                            <span class="arrow">></span>
+                        </a>
+                    </ul>
+                </div>
+                <!-- browse section -->
+                <div id="browse" class="tile">
+                    <div class="title">
+                        <span>Browse</span>
+                    </div>
+                    <ul>
+                        <a href="#artists">
+                            <li>Artist</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#album">
+                            <li>Album</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#title">
+                            <li>Title</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#genre">
+                            <li>Genre</li>
+                            <span class="arrow">></span>
+                        </a>
+                    </ul>
+                </div>
+                <!-- extras section -->
+                <div id="extras" class="tile">
+                    <div class="title">
+                        <span>Extras</span>
+                    </div>
+                    <ul>
+                        <a href="#cookie">
+                            <li>Clock</li>
+                        </a>
+                        <a href="#cookie">
+                            <li>Contacts</li>
+                        </a>
+                        <a href="#cookie">
+                            <li>Calendar</li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- setting section -->
+                <div id="settings" class="tile">
+                    <div class="title">
+                        <span>Settings</span>
+                    </div>
+                    <ul>
+                        <a href="#cookie">
+                            <li>Shuffle</li>
+                        </a>
+                        <a href="#cookie">
+                            <li>Repeat</li>
+                        </a>
+                        <a href="#cookie">
+                            <li>Backlight Timer</li>
+                        </a>
+                        <a href="#cookie">
+                            <li>Contrast</li>
+                        </a>
+                        <a href="#cookie">
+                            <li>Clicker</li>
+                        </a>
+                        <a href="#cookie">
+                            <li>Sleep Timer</li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- artist section in browse -->
+                <div id="artists" class="tile">
+                    <div class="title">
+                        <span>Artists</span>
+                    </div>
+                    <ul>
+                        <a href="#artists-alanwalker">
+                            <li>Alan-Walker</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-Marshmello">
+                            <li>Marshmello</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-edsheeran">
+                            <li>Ed Sheeran</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-brunomars">
+                            <li>Bruno Mars</li>
+                            <span class="arrow">></span>
+                        </a>
+                </div>
+                <!--artist section menu-->
+
+                <!-- Alan Walker -->
+                <div id="artists-alanwalker" class="tile">
+                    <div class="title">
+                        <span>Alan Walker</span>
+                    </div>
+                    <ul>
+                        <a href="#artists-alanwalker-all">
+                            <li>All</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-alanwalker-differentworld">
+                            <li>Faded</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-alanwalker-differentworld">
+                            <li>The Spectre</li>
+                            <span class="arrow">></span>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- Marshmello-->
+                <div id="artists-marshmello" class="tile">
+                    <div class="title">
+                        <span>Marshmello</span>
+                    </div>
+                    <ul>
+                        <a href="#artists-marshmello-joytime">
+                            <li>All</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-marshmello-joytime">
+                            <li>Alone</li>
+                            <span class="arrow">></span>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Ed Sheeran -->
+                <div id="artists-edsheeran" class="tile">
+                    <div class="title">
+                        <span>Ed Sheeran</span>
+                    </div>
+                    <ul>
+                        <a href="#artists-edsheeran-divide">
+                            <li>All</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-edsheeran-divide">
+                            <li>Divide</li>
+                            <span class="arrow">></span>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Bruno Mars -->
+                <div id="artists-brunomars" class="tile">
+                    <div class="title">
+                        <span>Bruno Mars</span>
+                    </div>
+                    <ul>
+                        <a href="#artists-brunomars-unorthodoxjukebox">
+                            <li>All</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-brunomars-unorthodoxjukebox">
+                            <li>Uptown Funk</li>
+                            <span class="arrow">></span>
+                        </a>
+                    </ul>
+                </div>
+                <!--menu of albums section-->
+                <div id="artists-alanwalker-differentworld" class="tile play">
+                    <div class="title">
+                        <span>Different World</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-01-Alone"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "1 of 3"
+			            data-title = "Alone">
+                            <li>Alone</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-03-SingMeToSleep"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "2 of 3"
+			            data-title = "Sing me to Sleep">
+                            <li>Sing Me to Sleep</li>
+                        </a>
+                        <a href="#audioplayer" 
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-02-Faded"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "3 of 3"
+			            data-title = "Faded">
+                            <li>Faded</li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- atrtist section menu -->
+                <!-- Alan walker -->
+                <div id="artists-alanwalker-all" class="tile play">
+                    <div class="title">
+                        <span>Alan Walker</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer" 
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-01-Alone"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "1 of 4"
+			            data-title = "Alone">
+                            <li>Alone</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-02-Faded"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "2 of 4"
+			            data-title = "Faded">
+                            <li>Faded</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-03-SingMeToSleep"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "3 of 4"
+			            data-title = "Sing me to Sleep">
+                            <li>Sing me to Sleep</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-04-Darkside"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "4 of 4"
+			            data-title = "Darkside">
+                            <li>Darkside</li>
+                        </a>
+                    </ul>
+                </div>
+                <!--Marshmello -->
+                <div id="artists-marshmello-joytime" class="tile play">
+                    <div class="title">
+                        <span>Joytime</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                        data-url="song/Marshmello/Joytime/Marshmello-Joytime-01-Summer"
+			            data-artist = "Marshmello"
+			            data-album = "Joytime"
+			            data-trackno = "1 of 2"
+			            data-title = "Summer">
+                            <li>Summer</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Marshmello/Joytime/Marshmello-Joytime-02-FindMe"
+			            data-artist = "Marshmello"
+			            data-album = "Joytime"
+			            data-trackno = "2 of 2"
+			            data-title = "Find me">
+                            <li>Find Me</li>
+                        </a>
+                    </ul>
+                </div>
+                <!--Ed Sheeran-->
+                <div id="artists-edsheeran-divide" class="tile play">
+                    <div class="title">
+                        <span>Divide</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                        data-url="song/Ed-Sheeran/Divide/Ed-Sheeran-Divide-01-Shape-of-You"
+			            data-artist = "Ed Sheeran"
+			            data-album = "Divide"
+			            data-trackno = "1 of 2"
+			            data-title = "Shape of You">
+                            <li>Shape of You</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Ed-Sheeran/Divide/Ed-Sheeran-Divide-02-Galway-Girl"
+			            data-artist = "Ed Sheeran"
+			            data-album = "Divide"
+			            data-trackno = "2 of 2"
+			            data-title = "Galway Girl">
+                            <li>Galway Girl</li>
+                        </a>
+                    </ul>
+                </div>
+                <!--Bruno Mars-->
+                <div id="artists-brunomars-unorthodoxjukebox" class="tile play">
+                    <div class="title">
+                        <span>Unorthodox Jukebox</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                        data-url="song/Bruno-Mars/Unorthodox-Jukebox/Bruno-Mars-Unorthodox-Jukebox-02-Locked-Out-of-heaven"
+			            data-artist = "Bruno Mars"
+			            data-album = "Unorthodox Jukebox"
+			            data-trackno = "1 of 2"
+			            data-title = "Locked Out of heaven">
+                            <li>Locked Out of heaven</li>
+                        </a>
+                        <a href="#audioplayer" 
+                        data-url="song/Bruno-Mars/Unorthodox-Jukebox/Bruno-Mars-Unorthodox-Jukebox-02-Treasure"
+			            data-artist = "Bruno Mars"
+			            data-album = "Unorthodox Jukebox"
+			            data-trackno = "2 of 2"
+			            data-title = "Treasure">
+                            <li>Treasure</li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Albums -->
+                <div id="album" class="tile">
+                    <div class="title">
+                        <span>Albums</span>
+                    </div>
+                    <ul>
+                        <a href="#artists-alanwalker-differentworld">
+                            <li>Different World</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#artists-marshmello-joytime">
+                            <li>Joytime</li>
+                            <span class="arrow">></span>
+                        </a>
+
+                        <a href="#artists-edsheeran-divide">
+                            <li>Divide</li>
+                            <span class="arrow">></span>
+                        </a>
+
+                        <a href="#artists-brunomars-unorthodoxjukebox">
+                            <li>Unorthodox Jukebox</li>
+                            <span class="arrow">></span>
+                        </a>
+
+                    </ul>
+
+                </div>
+                <!-- Songs section menu-->
+                <div id="title" class="tile play">
+                    <div class="title">
+                        <span>Songs</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                        data-url="song/Bruno-Mars/Unorthodox-Jukebox/Bruno-Mars-Unorthodox-Jukebox-02-Locked-Out-of-heaven"
+			            data-artist = "Bruno Mars"
+			            data-album = "Unorthodox Jukebox"
+			            data-trackno = "1 of 11"
+			            data-title = "Locked Out of heaven">>
+                            <li>Locked Out of Heaven</li>
+                        </a>
+                        <a href="#audioplayer" 
+                        data-url="song/Bruno-Mars/Unorthodox-Jukebox/Bruno-Mars-Unorthodox-Jukebox-02-Treasure"
+			            data-artist = "Bruno Mars"
+			            data-album = "Unorthodox Jukebox"
+			            data-trackno = "2 of 11"
+			            data-title = "Treasure">
+                            <li>Treasure</li>
+                        </a>
+                        <a href="#audioplayer" 
+                        data-url="song/Ed-Sheeran/Divide/Ed-Sheeran-Divide-02-Galway-Girl"
+			            data-artist = "Ed Sheeran"
+			            data-album = "Divide"
+			            data-trackno = "3 of 11"
+			            data-title = "Galway Girl">
+                            <li>Galway Girl</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Marshmello/Joytime/Marshmello-Joytime-02-FindMe"
+			            data-artist = "Marshmello"
+			            data-album = "Joytime"
+			            data-trackno = "4 of 11"
+			            data-title = "Find me">>
+                            <li>Find Me</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Marshmello/Joytime/Marshmello-Joytime-01-Summer"
+			            data-artist = "Marshmello"
+			            data-album = "Joytime"
+			            data-trackno = "5 of 11"
+			            data-title = "Summer">
+                            <li>Summer</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Marshmello/Joytime/Marshmello-Joytime-01-Alone"
+			            data-artist = "Marshmello"
+			            data-album = "Joytime"
+			            data-trackno = "6 of 11"
+			            data-title = "Alone">
+                            <li>Alone</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Ed-Sheeran/Divide/Ed-Sheeran-Divide-01-Shape-of-You"
+			            data-artist = "Ed Sheeran"
+			            data-album = "Divide"
+			            data-trackno = "7 of 11"
+			            data-title = "Shape of You">
+                            <li>Shape of You</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-03-SingMeToSleep"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "8 of 11"
+			            data-title = "Sing me to Sleep">>
+                            <li>Sing Me to Sleep</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-04-Darkside"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "9 of 11"
+			            data-title = "Darkside">
+                            <li>Darkside</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-01-Alone"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "10 of 11"
+			            data-title = "Alone">
+                            <li>Alone</li>
+                        </a>
+                        <a href="#audioplayer" 
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-02-Faded"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "11 of 11"
+			            data-title = "Faded">
+                            <li>Faded</li>
+                        </a>
+                        
+                    </ul>
+                </div>
+                <!--Genres section menu -->
+                <div id="genre" class="tile">
+                    <div class="title">
+                        <span>Genre</span>
+                    </div>
+                    <ul>
+                        <a href="#genre-alternative">
+                            <li>EDM</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#genre-rock">
+                            <li>Rock</li>
+                            <span class="arrow">></span>
+                        </a>
+                        <a href="#genre-hiphop">
+                            <li>Hip-Hop Beats</li>
+                            <span class="arrow">></span>
+                        </a>
+                    </ul>
+                </div>
+                <!--selected genre menue -->
+                <div id="genre-alternative" class="tile play">
+                    <div class="title">
+                        <span>EDM</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                        data-url="song/Marshmello/Joytime/Marshmello-Joytime-01-Summer"
+			            data-artist = "Marshmello"
+			            data-album = "Joytime"
+			            data-trackno = "1 of 2"
+			            data-title = "Summer">
+                            <li>Summer</li>
+                        </a>
+                        <a href="#audioplayer" 
+                        data-url="song/Marshmello/Joytime/Marshmello-Joytime-02-FindMe"
+			            data-artist = "Marshmello"
+			            data-album = "Joytime"
+			            data-trackno = "2 of 2"
+			            data-title = "Find me">
+                            <li>Find Me</li>
+                        </a>
+                    </ul>
+                </div>
+                <!--genre rock menu -->
+                <div id="genre-rock" class="tile play">
+                    <div class="title">
+                        <span>Rock</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                            data-url="song/Bruno-Mars/Unorthodox-Jukebox/Bruno-Mars-Unorthodox-Jukebox-02-Locked-Out-of-heaven"
+			            data-artist = "Bruno Mars"
+			            data-album = "Unorthodox Jukebox"
+			            data-trackno = "1 of 2"
+			            data-title = "Locked Out of heaven">
+                            <li>Locked Out of Heaven</li>
+                        </a>
+                        <a href="#audioplayer"
+                            data-url="song/Bruno-Mars/Unorthodox-Jukebox/Bruno-Mars-Unorthodox-Jukebox-02-Treasure"
+			            data-artist = "Bruno Mars"
+			            data-album = "Unorthodox Jukebox"
+			            data-trackno = "2 of 2"
+			            data-title = "Treasure">
+                            <li>Treasure</li>
+                        </a>
+                    </ul>
+                </div>
+                <!--genre hiphop menu -->
+                <div id="genre-hiphop" class="tile play">
+                    <div class="title">
+                        <span>Hip Hop</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer" 
+                        data-url="song/Ed-Sheeran/Divide/Ed-Sheeran-Divide-01-Shape-of-You"
+			            data-artist = "Ed Sheeran"
+			            data-album = "Divide"
+			            data-trackno = "1 of 3"
+			            data-title = "Shape of You">
+                            <li>Shape of You</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Alan-Walker/Different-World/AlanWalker-DifferentWorld-02-Faded"
+			            data-artist = "Alan Walker"
+			            data-album = "Different World"
+			            data-trackno = "2 of 3"
+			            data-title = "Faded">
+                            <li>Faded</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Ed-Sheeran/Divide/Ed-Sheeran-Divide-02-Galway-Girl"
+			            data-artist = "Ed Sheeran"
+			            data-album = "Divide"
+			            data-trackno = "3 of 3"
+			            data-title = "Galway Girl">
+                            <li>Galway Girl</li>
+                        </a>
+                    </ul>
+                </div>
+                <!--Favorites section menu -->
+                <div id="favorites" class="tile play">
+                    <div class="title">
+                        <span>Favorites</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                        data-url="song/Ed-Sheeran/Divide/Ed-Sheeran-Divide-02-Galway-Girl"
+			            data-artist = "Ed Sheeran"
+			            data-album = "Divide"
+			            data-trackno = "1 of 2"
+			            data-title = "Galway Girl">
+                            <li>Galway Girl</li>
+                        </a>
+                        <a href="#audioplayer" 
+                        data-url="song/Bruno-Mars/Unorthodox-Jukebox/Bruno-Mars-Unorthodox-Jukebox-02-Locked-Out-of-heaven"
+			            data-artist = "Bruno Mars"
+			            data-album = "Unorthodox Jukebox"
+			            data-trackno = "2 of 2"
+			            data-title = "Locked Out of heaven">
+                            <li>Locked Out of Heaven</li>
+                        </a>
+                    </ul>
+                </div>
+                <!--mondaymorning section -->
+                <div id="mondaymorning" class="tile play">
+                    <div class="title">
+                        <span>Monday Morning</span>
+                    </div>
+                    <ul>
+                        <a href="#audioplayer"
+                        data-url="song/Bruno-Mars/Unorthodox-Jukebox/Bruno-Mars-Unorthodox-Jukebox-02-Locked-Out-of-heaven"
+			            data-artist = "Bruno Mars"
+			            data-album = "Unorthodox Jukebox"
+			            data-trackno = "1 of 2"
+			            data-title = "Locked Out of heaven">
+                            <li>Locked Out of Heaven</li>
+                        </a>
+                        <a href="#audioplayer"
+                        data-url="song/Ed-Sheeran/Divide/Ed-Sheeran-Divide-02-Galway-Girl"
+			            data-artist = "Ed Sheeran"
+			            data-album = "Divide"
+			            data-trackno = "2 of 2"
+			            data-title = "Galway Girl">
+                            <li>Galway Girl</li>
+                        </a>
+                    </ul>
+                </div>
+                <!--About section -->
+                <div id="about" class="tile">
+                    <div class="title">
+                        <span>About</span>
+                    </div>
+                </div>
+                <!--Clock section-->
+                <div id="clock" class="tile">
+                    <div class="title">
+                        <span>Clock</span>
+                    </div>
+
+                    <div id="time">
+                    </div>
+                </div>
+                <!--Calendar-->
+                <div id="calendar" class="tile">
+                    <div class="title">
+                        <span>Calendar</span>
+                    </div>
+
+                    <div id="calendarr">
+                    </div>
+
+                </div>
+                <!--Cookie-->
+                <div id="cookie" class="tile">
+                    <div class="title">
+                        <span>
+                            <br><br><br><br>NOTHING IS PRESENT HERE</span>
+                        </span>
+                    </div>
+                </div>
+                <!--audio player div -->
+                <div id="audioplayer" class="tile">
+                    <div class="title">
+                        <span>Now Playing</span>
+                    </div>
+                    <ul>
+                        <li class="tracknumber"></li>
+                        <li class="songtitle"></li>
+                        <li class="songartist"></li>
+                        <li class="albumtitle"></li>
+                        <li class="timevolume">
+                            <div class="timeline">
+                                <span class="time">hh</span>
+                                <div class="trackbar">
+                                    <div class="trackbartime"></div>
+                                </div>
+                                <div id="player"></div>
+                            </div>
+
+                            <div class="volume">
+                                <div class="volumeincr">
+                                </div>
+                                <div class="volumebar">
+                                    <div class="volumelevel"></div>
+                                </div>
+                                <div class="volumedecr"></div>
+                            </div>
+
+                            <div class="scrolltime">
+                                <div class="scrolltimebar">
+                                    <div class="scrolltimelevel"></div>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--end screen -->
+            <div id="clickwheel">
+                <div id="menu">MENU</div>
+                <div id="prev">
+                    <img id="previmg" src="images/previousimg.png">
+                </div>
+                <div id="next">
+                    <img id="nextimg" src="images/nextimg.png">
+                </div>
+                <div id="play-pause">
+                    <img id="pauseimg" src="images/play.png">
+                </div>
+                <a href="#" id="back">
+                    <div class="button" id="topbutton"></div>
+                </a>
+                <a href="#" id="playpausebutton">
+                    <div class="button" id="bottombutton"></div>
+                </a>
+                <a href="#" id="rewindbutton">
+                    <div class="button" id="leftbutton"></div>
+                </a>
+                <a href="#" id="fastforwardbutton">
+                    <div class="button" id="rightbutton"></div>
+                </a>
+                <div id="innerwheel">
+                    <input type="text" value="75" class="dial" data-width="234" data-cursor="true" data-thickness=".9"
+                        data-fgColor="#E9EDEC" data-bgColor="#E9EDEC" data-displayInput="true" style="display: none;">
+                        
+                    <a href="#" id="select">
+                        <div id="innerbutton">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
